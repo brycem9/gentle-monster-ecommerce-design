@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: black;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* NAVIGATION */
+
+.dynamic-header {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 28px;
+}
+
+.dynamic-header__text {
+    color: gray;
+    font-size: 12px;
+}
+
+.margiela-bg-img {
+    background-image: url(./assets/background-images/story-main-banner-pc.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.logo__wrapper {
+    width: 290px;
+    padding: 32px;
+}
+
+.nav__elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.nav__links {
+    color: white;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.user__buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.shop__button {
+    background: none;
+    border: none ;
+    color: white;
+}
+
+.search__button {
+    filter: invert();
+    height: 40px;
+}
+
+.bag__button {
+    filter: invert();
+    height: 35px;
+}
