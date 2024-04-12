@@ -46,6 +46,7 @@ a {
     background-image: url(./assets/background-images/story-main-banner-pc.jpg);
     background-size: cover;
     height: 100vh;
+    background-position-y: -3rem ;
 }
 
 .logo__wrapper {
@@ -154,6 +155,38 @@ a {
     background-image: url(./assets/background-images/campaign-main-banner-pc.jpg);
     background-size: cover;
     height: 100vh;
+    position: relative;
+}
+
+.collection2024__text {
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+
+.collection2024__link--container {
+    display: flex;
+    position: absolute;
+    bottom: 60px;
+}
+
+/* OPTICAL COLLECTIOn */
+
+.optical__colllection--bg__img {
+    background-image: url(./assets/background-images/optical-collection-main-banner-pc.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
 }
 
 
+.black__text {
+    color: black;
+}
+
+.black__splash--link {
+    border-bottom: solid black 1px;
+    z-index: 20;
+}
