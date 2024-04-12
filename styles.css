@@ -2,10 +2,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 html {
-    background-color: black;
+    
 }
 
 img {
@@ -23,6 +24,8 @@ a {
     text-decoration: none;
     color: white;
 }
+
+
 
 /* NAVIGATION */
 
@@ -50,11 +53,15 @@ a {
     padding: 32px;
 }
 
+
+
 .nav__elements {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 70px;
+    overflow-y: hidden;
+    
 }
 
 .nav__links {
@@ -68,20 +75,81 @@ a {
     display: flex;
     gap: 20px;
     align-items: center;
+    
 }
 
 .shop__button {
     background: none;
     border: none ;
     color: white;
+    
 }
 
 .search__button {
     filter: invert();
     height: 40px;
+    overflow-y: hidden;
 }
 
 .bag__button {
     filter: invert();
     height: 35px;
+    overflow-y: hidden;
+}
+
+/* MAIN */
+
+.margiela__x--gentle__monster--img__container {
+    width: 400px;
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%);
+    bottom: 120px;
+}
+
+.margiela__x--gentle__monster--img__container2 {
+    width: 400px;
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%);
+    bottom: 120px;
+    filter: invert();
+    z-index: 20;
+}
+
+.link__container {
+    display: flex;
+    justify-content: center;
+    color: white;
+    z-index: 10;
+}
+
+.splash__link {
+    border-bottom: solid white 1px;
+    z-index: 20;
+}
+
+.link__margin {
+    margin-right: 21px;
+}
+
+/* VIDEO SECTION */
+
+.video__container {
+    position: relative;
+}
+
+.splash__video {
+    transform: scale(1.01);
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* 2024 COLLECTION */
+
+.collection2024__bg--img {
+    background-image: url(./assets/background-images/campaign-main-banner-pc.jpg);
+    background-size: cover;
+    height: 100vh;
 }
