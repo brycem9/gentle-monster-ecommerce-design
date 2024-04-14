@@ -68,7 +68,15 @@ a {
     padding: 32px;
 }
 
-
+.collection2024__nav--elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    overflow-y: hidden;
+    width: 100%;
+    z-index: 50;
+}
 
 .nav__elements {
     display: flex;
