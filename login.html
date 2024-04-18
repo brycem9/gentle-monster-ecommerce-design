@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,14 +15,11 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GENTLE MONSTER DEMO</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <nav>
-      <div class="dynamic-header">
+      <div class="optical2024__dynamic--header">
         <div
           id="carouselExampleAutoplaying"
           class="carousel slide"
@@ -45,10 +44,12 @@
           </div>
         </div>
       </div>
-      <div class="margiela-bg-img">
-        <div class="nav__elements">
+      <div>
+        <div class="optical2024__nav--elements">
           <figure class="logo__wrapper">
-            <img src="./assets/logos/gentle-monster-logo.png" alt="" />
+            <a href="./index.html"
+              ><img src="./assets/logos/gentle-monster-logo.png" alt=""
+            /></a>
           </figure>
           <ul class="nav__links">
             <a href=""><li>Sunglasses</li></a>
@@ -68,9 +69,8 @@
                 />
               </figure>
             </button>
-
             <button class="shop__button">Shop in US</button>
-            <a href="./login.html"><button class="shop__button">Login</button></a> 
+            <button class="shop__button">Login</button>
             <button>
               <figure class="bag__button">
                 <img
@@ -83,72 +83,76 @@
         </div>
       </div>
     </nav>
-    <section id="margiela__splash">
-      <figure class="margiela__x--gentle__monster--img__container">
-        <img src="./assets/logos/margiela-x-gentle-monster.png" alt="" />
-        <div class="link__container">
-          <div>
-            <a href="" class="splash__link link__margin">Discover More</a>
-          </div>
-          <div>
-            <a href="" class="splash__link">Shop Now</a>
-          </div>
-        </div>
-      </figure>
-    </section>
-    <section id="margiela__video" class="video__container">
-      <figure class="margiela__x--gentle__monster--img__container2">
-        <img src="./assets/logos/margiela-x-gentle-monster.png" alt="" />
-        <div class="link__container">
-          <div>
-            <a href="" class="splash__link">Visit Pop-up Stores</a>
-          </div>
-        </div>
-      </figure>
-      <video
-        class="splash__video"
-        loop
-        autoplay
-        src="./assets/videos/video-src-pc-v3.mp4"
-      ></video>
-    </section>
-    <section id="collection2024">
-      <div class="collection2024__bg--img">
-        <h1 class="collection2024__text">2024 Collection</h1>
-        <div class="link__container">
-          <div class="collection2024__link--container">
-            <div>
-              <a href="/2024collection.html" class="splash__link link__margin">Discover More</a>
+    <section id="login">
+      <div class="login__spacer">
+        <div class="login__container">
+          <div class="login__wrapper">
+            <div class="header__wrapper">
+              <h1 class="login__header">Login</h1>
             </div>
-            <div>
-              <a href="" class="splash__link link">Shop the Collection</a>
+            <div class="email__wrapper">
+              <h1 class="login__header2">Email</h1>
+              <input type="email" name="" id="email" />
+            </div>
+            <div class="password__wrapper">
+              <h1 class="login__header2">Password</h1>
+              <input type="password" name="" id="password" />
+            </div>
+            <div class="fg-wrapper">
+              <span class="fg">Forgot Password?</span>
+            </div>
+            <div class="button__wrapper">
+              <button class="login__button">Login</button>
+            </div>
+            <span class="or">Or</span>
+            <div class="button__wrapper">
+              <button class="facebook__button">
+                <figure class="fb__icon">
+                  <img
+                    src="https://web-resource.gentlemonster.com/assets/img/icon/f_logo_RGB-White_1024.svg"
+                    alt=""
+                  />
+                </figure>
+                <span>Continue with Facebook</span>
+                <div></div>
+              </button>
+              <button class="apple__button">
+                <figure class="apple__icon">
+                  <img src="assets/logos/Apple_logo_black.svg.png" alt="" />
+                </figure>
+                <span>Sign in with Apple</span>
+                <div></div>
+              </button>
+              <div class="create__acc--wrapper">
+                <div class="header__wrapper">
+                  <h1 class="login__header">Create Account</h1>
+                </div>
+                <p class="create__acc--para">
+                  By creating an account with Gentle Monster, you will be able
+                  to place your orders, save shipping preferences, create your
+                  wish list among other benefits.
+                </p>
+                <div class="button__wrapper">
+                  <button class="login__button">Create Account</button>
+                </div>
+              </div>
+              <div class="create__acc--wrapper">
+                <div class="header__wrapper">
+                  <h1 class="login__header">Check Your Order Status</h1>
+                </div>
+                <p class="create__acc--para">
+                    If you purchased items without creating an account, you can track your order here.
+                </p>
+                <div class="button__wrapper">
+                  <button class="login__button">Track Order</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="optical-collection">
-      <div class="optical__colllection--bg__img">
-        <h1 class="collection2024__text">
-          <span class="black__text">2024 Optical Collection</span>
-        </h1>
-        <div class="link__container">
-          <div class="collection2024__link--container">
-            <div>
-              <a href="./optical24.html" class="black__splash--link link__margin"
-                ><span class="black__text">Shop the Collection</span>
-              </a>
-            </div>
-            <div>
-              <a href="" class="black__splash--link"
-                ><span class="black__text">Discover More</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer>
+    <footer class="product__footer">
       <div class="footer__link--container">
         <ul class="footer__links">
           <li class="footer__header">Customer Service</li>
