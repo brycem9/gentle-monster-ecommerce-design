@@ -88,6 +88,7 @@ h1 {
   background-size: cover;
   height: 100vh;
   background-position-y: -3rem;
+  background-position: center;
 }
 
 .discover__collection2024--bg__img {
@@ -95,6 +96,7 @@ h1 {
   background-size: cover;
   height: 110vh;
   position: relative;
+  background-position: center;
 }
 
 .logo__wrapper {
@@ -182,7 +184,7 @@ h1 {
   height: 70px;
   overflow-y: hidden;
   position: fixed;
-  width: 100%;
+  width: 113%;
   z-index: 50;
   
 }
@@ -460,6 +462,7 @@ padding-left: 8px;
   background-size: cover;
   height: 100vh;
   position: relative;
+  background-position: center;
 }
 
 .collection2024__text {
@@ -536,12 +539,16 @@ padding-left: 8px;
   margin-bottom: 0px;
 }
 
-.product__name {
+.product__name--container {
   position: absolute;
   bottom: 42px;
   left: 24px;
   color: white;
   font-size: 10px;
+}
+
+.product__name {
+  font-size: 18px;
 }
 
 .product__link {
@@ -623,6 +630,7 @@ padding-left: 8px;
   background-size: cover;
   height: 100vh;
   position: relative;
+  background-position: center;
 }
 
 .black__text {
@@ -1068,7 +1076,7 @@ width: 30%;
 .info__product--pic {
   width: 70px;
   height: 70px;
-  
+  cursor: pointer;
   border-radius: 3px;
   border: rgba(0, 0, 0, 0) solid 1px;
   transition: 600ms all ease;
@@ -1181,4 +1189,38 @@ aside {
   display: flex;
   justify-content: space-between;
   padding: 32px;
+}
+
+.menu__button {
+  width: 30px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  filter: invert();
+  display: none;
+}
+
+
+@media (max-width: 1136px) {
+  .user__buttons {
+    display: none;
+  }
+
+  .menu__button {
+    display: block;
+  }
+}
+
+
+@media (max-width: 1286px) {
+.nav__elements {
+  width: 100%;
+}
+}
+
+
+@media (max-width: 920px) {
+  .nav__links {
+    display: none;
+  }
 }
