@@ -15,8 +15,12 @@
     ></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GENTLE MONSTER DEMO</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <link rel="stylesheet" href="styles.css" />
+    <script src="./index.js" ></script>
   </head>
   <body>
     <nav>
@@ -45,8 +49,34 @@
           </div>
         </div>
       </div>
+      <div class="optical2024__dynamic--header">
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="" class="dynamic-header__text"
+                >Experience Gentle Monster with a Free Shipping Service</a
+              >
+            </div>
+            <div class="carousel-item">
+              <a href="" class="dynamic-header__text"
+                >Lens Prescription Order Guide</a
+              >
+            </div>
+            <div class="carousel-item">
+              <a href="" class="dynamic-header__text"
+                >4 interest-free payments with Klarna</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="margiela-bg-img">
-        <div class="nav__elements">
+        <!-- after cart is done, change class back to nav__elements -->
+        <div class="nav__elements  ">
           <figure class="logo__wrapper">
             <img src="./assets/logos/gentle-monster-logo.png" alt="" />
           </figure>
@@ -70,8 +100,47 @@
             </button>
 
             <button class="shop__button">Shop in US</button>
-            <a href="./login.html"><button class="shop__button">Login</button></a> 
+            <a href="./login.html"
+              ><button class="shop__button">Login</button></a
+            >
+            <button onclick="openMenu()">
+              <figure class="bag__button">
+                <img
+                  src="./assets/icons/shopping_bag_FILL0_wght200_GRAD0_opsz24.svg"
+                  alt=""
+                />
+              </figure>
+            </button>
+          </div>
+        </div>
+        <div class="optical2024__nav--elements">
+          <figure class="logo__wrapper">
+            <img src="./assets/logos/gentle-monster-logo.png" alt="" />
+          </figure>
+          <ul class="nav__links">
+            <a href=""><li>Sunglasses</li></a>
+            <a href=""><li>Glasses</li></a>
+            <a href=""><li>Collaborations</li></a>
+            <a href=""><li>Styles</li></a>
+            <a href=""><li>Stories</li></a>
+            <a href=""><li>Stores</li></a>
+            <a href=""><li>Services</li></a>
+          </ul>
+          <div class="user__buttons">
             <button>
+              <figure class="search__button">
+                <img
+                  src="./assets/icons/search_FILL0_wght200_GRAD0_opsz24.svg"
+                  alt=""
+                />
+              </figure>
+            </button>
+
+            <button class="shop__button">Shop in US</button>
+            <a href="./login.html"
+              ><button class="shop__button">Login</button></a
+            >
+            <button onclick="openMenu()">
               <figure class="bag__button">
                 <img
                   src="./assets/icons/shopping_bag_FILL0_wght200_GRAD0_opsz24.svg"
@@ -83,7 +152,64 @@
         </div>
       </div>
     </nav>
+
     <section id="margiela__splash">
+      <div class="cart__wrapper">
+        <div class="cart__divider" onclick="closeMenu()"></div>
+        <div class="cart__main">
+          <div class="cart__main--wrapper">
+            <div class="cart__container">
+              <h5 class="cart__header">Shopping Bag</h5>
+              <img onclick="closeMenu()"
+                class="close__icon"
+                src="./assets/icons/close_FILL1_wght200_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </div>
+            <div class="cart__product--container">
+              <figure class="cart__product--img">
+                <img
+                  src="./assets/carousel-images/optical2024/academya02/11001_ACADEMYA_02_2.avif"
+                  alt=""
+                />
+              </figure>
+              <div class="cart__product--wrapper">
+                <h6 class="cart__product--name">
+                  Academya 02
+                  <span class="cart__product--price">USD $330</span>
+                </h6>
+                <div class="cart__counter--container">
+                  <div class="cart__counter">
+                    <div class="counter__piece">-</div>
+                    <div class="counter__piece--number">1</div>
+                    <div class="counter__piece--plus">+</div>
+                  </div>
+                  <span>Delete</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart__total--container">
+            <div class="total__text--shipping">
+              <h6>Standard Shipping</h6>
+              <h6>Free</h6>
+            </div>
+            <div class="total__text">
+              <h6>Subtotal</h6>
+              <h6>USD$ 330</h6>
+            </div>
+            <div class="total__text">
+              <h6>Sales Tax</h6>
+              <h6>Calculated at Checkout</h6>
+            </div>
+            <div class="checkout__buttons">
+              <button class="checkout__button">Checkout</button>
+              <button class="view__bag--button">View Shopping Bag</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <figure class="margiela__x--gentle__monster--img__container">
         <img src="./assets/logos/margiela-x-gentle-monster.png" alt="" />
         <div class="link__container">
@@ -118,7 +244,9 @@
         <div class="link__container">
           <div class="collection2024__link--container">
             <div>
-              <a href="/2024collection.html" class="splash__link link__margin">Discover More</a>
+              <a href="/2024collection.html" class="splash__link link__margin"
+                >Discover More</a
+              >
             </div>
             <div>
               <a href="" class="splash__link link">Shop the Collection</a>
@@ -135,7 +263,9 @@
         <div class="link__container">
           <div class="collection2024__link--container">
             <div>
-              <a href="./optical24.html" class="black__splash--link link__margin"
+              <a
+                href="./optical24.html"
+                class="black__splash--link link__margin"
                 ><span class="black__text">Shop the Collection</span>
               </a>
             </div>
