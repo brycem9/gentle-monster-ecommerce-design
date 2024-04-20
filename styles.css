@@ -12,6 +12,11 @@ h2 {
   overflow-y: hidden;
 }
 
+h5 {
+  margin-bottom: 0px;
+  padding-bottom: 3px;
+}
+
 body {
   background-color: rgb(235, 235, 235);
 }
@@ -99,6 +104,14 @@ h1 {
   background-position: center;
 }
 
+.moncler__collab--bg__img {
+  background-image: url(./assets/gallery-images/moncler/keyvisual_a.webp);
+  background-size: contain;
+  height: 80vh;
+  position: relative;
+  background-position: center;
+}
+
 .logo__wrapper {
   width: 290px;
   padding: 32px;
@@ -115,7 +128,7 @@ h1 {
 }
 
 .optical2024__nav--elements {
-  
+
   justify-content: space-between;
   align-items: center;
   height: 70px;
@@ -127,8 +140,18 @@ h1 {
   background-color: black;
   margin-top: 28px;
   display: none;
-  
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms ease;
 }
+
+
+.menu--open .optical2024__nav--elements {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+}
+
 .optical2024__nav--elements2 {
   
   justify-content: space-between;
@@ -141,11 +164,6 @@ h1 {
   filter: invert();
   background-color: black;
   margin-top: 28px;
-  display: flex;
-  
-}
-
-.menu--open .optical2024__nav--elements {
   display: flex;
   
 }
@@ -186,11 +204,14 @@ h1 {
   position: fixed;
   width: 113%;
   z-index: 50;
-  
+  opacity: 1;
+  visibility: visible;
+  transition: all 600ms ease;
 }
 
 .menu--open .nav__elements {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
 }
 
 
@@ -763,6 +784,7 @@ padding-left: 8px;
   padding: 16px;
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 100px;
 }
 .product__container {
   background-color: white;
@@ -906,11 +928,112 @@ font-weight: 400;
   overflow-y: hidden;
 }
 
+.email__wrapper2 {
+  width: 100%;
+  padding: 4px;
+  margin-top: 4px;
+  overflow-y: hidden;
+}
+
+.email__wrapper3 {
+  width: 100%;
+  padding: 4px;
+  margin-top: 4px;
+  overflow-y: hidden;
+  display: flex;
+  
+  align-items: center;
+  
+}
+
+.create-acc__buttons{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 32px;
+}
+
+.cancel--btn {
+  border: black solid 1px;
+  width: 55%;
+  padding: 8px;
+  margin: 12px;
+}
+
+.cancel__link {
+  color: black;
+}
+
+.create--btn {
+  background-color: black;
+  color: white;
+  width: 55%;
+  padding: 8px;
+  margin: 12px;
+}
+
+#checkbox {
+  margin-right: 12px;
+}
+
+p {
+  margin-bottom: 0;
+}
+
 .password__wrapper {
   width: 100%;
   padding: 8px;
   margin-top: 18px;
   overflow-y: hidden;
+}
+
+.password__wrapper2 {
+  width: 100%;
+  padding: 4px;
+  margin-top: 4px;
+  overflow-y: hidden;
+}
+
+.name__container {
+  width: 100%;
+  padding: 4px;
+  margin-top: 4px;
+  overflow-y: hidden;
+ 
+}
+
+.name__wrapper {
+  display: flex;
+}
+
+#first__name {
+  border: solid  black 1px;
+  height: 40px;
+  width: 100%;
+  padding: 8px;
+  outline: none;
+}
+
+#last__name {
+  border: solid  black 1px;
+  height: 40px;
+  width: 100%;
+  padding: 8px;
+  outline: none;
+}
+
+#date {
+  width: 100%;
+  height: 45px;
+  border: solid black 1px; 
+  padding: 8px;
+  outline: none;
+}
+
+#gender {
+width: 100%;
+height: 45px;
+border: solid black 1px;
 }
 
 #email {
@@ -1165,6 +1288,44 @@ aside {
   cursor: pointer;
 }
 
+/* STYLES PAGE */
+
+.styles__heading--container {
+  margin-top: 100px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 200px;
+}
+
+.styles--heading {
+font-size: 16px;
+}
+
+.styles--image {
+  width: 25%;
+  padding: 0px 12px 12px 0px;
+  margin-bottom: 0;
+}
+
+.nth--image {
+  padding-right: 0px;
+}
+
+.styles__image--container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 12px;
+  background-color: white;
+  margin-bottom: 0;
+}
+
+.styles__image--wrapper {
+  width: 100%;
+}
 
 
 /* FOOTER */

@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,6 +14,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <title>Document</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -88,64 +88,65 @@
         <div class="login__container">
           <div class="login__wrapper">
             <div class="header__wrapper">
-              <h1 class="login__header">Login</h1>
+              <h1 class="login__header">Create Account</h1>
             </div>
-            <div class="email__wrapper">
+            <div class="email__wrapper2">
               <h1 class="login__header2">Email</h1>
               <input type="email" name="" id="email" />
             </div>
-            <div class="password__wrapper">
+            <div class="email__wrapper2">
+              <h1 class="login__header2">Confirm Email Address</h1>
+              <input type="email" name="" id="email" />
+            </div>
+            <div class="password__wrapper2">
               <h1 class="login__header2">Password</h1>
               <input type="password" name="" id="password" />
             </div>
-            <div class="fg-wrapper">
-              <span class="fg">Forgot Password?</span>
+            <div class="password__wrapper2">
+              <h1 class="login__header2">Confirm Password</h1>
+              <input type="password" name="" id="password" />
             </div>
-            <div class="button__wrapper">
-              <button class="login__button">Login</button>
-            </div>
-            <span class="or">Or</span>
-            <div class="button__wrapper">
-              <button class="facebook__button">
-                <figure class="fb__icon">
-                  <img
-                    src="https://web-resource.gentlemonster.com/assets/img/icon/f_logo_RGB-White_1024.svg"
-                    alt=""
-                  />
-                </figure>
-                <span>Continue with Facebook</span>
-                <div></div>
-              </button>
-              <button class="apple__button">
-                <figure class="apple__icon">
-                  <img src="assets/logos/Apple_logo_black.svg.png" alt="" />
-                </figure>
-                <span>Sign in with Apple</span>
-                <div></div>
-              </button>
-              <div class="create__acc--wrapper">
-                <div class="header__wrapper">
-                  <h1 class="login__header">Create Account</h1>
+            <div class="email__wrapper2">
+              <h1 class="login__header2">Confirm Email Address</h1>
+              <form>
+                <label for="gender">Gender </label>
+                <select id="gender" name="gender">
+                  <option selected value="Gender">Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </form>
+              <div class="name__wrapper">
+                <div class="name__container">
+                  <h1 class="login__header2">First Name</h1>
+                  <input type="text" name="" id="first__name" />
                 </div>
-                <p class="create__acc--para">
-                  By creating an account with Gentle Monster, you will be able
-                  to place your orders, save shipping preferences, create your
-                  wish list among other benefits.
-                </p>
-                <div class="button__wrapper">
-                  <a href="./create-account.html"><button class="login__button">Create Account</button></a>
+                <div class="name__container">
+                  <h1 class="login__header2">Last Name</h1>
+                  <input type="text" name="" id="last__name" />
                 </div>
               </div>
-              <div class="create__acc--wrapper">
-                <div class="header__wrapper">
-                  <h1 class="login__header">Check Your Order Status</h1>
-                </div>
-                <p class="create__acc--para">
-                    If you purchased items without creating an account, you can track your order here.
-                </p>
-                <div class="button__wrapper">
-                  <button class="login__button">Track Order</button>
-                </div>
+              <div class="email__wrapper2">
+                <h1 class="login__header2">Date of Birth</h1>
+                <input type="date" name="" id="date" />
+              </div>
+              <div class="email__wrapper2">
+                <h1 class="login__header2">Country</h1>
+                <input type="" placeholder="United States" name="" id="date" />
+              </div>
+              <div class="email__wrapper3">
+                <input type="checkbox" name="" id="checkbox" />
+                <p>I would like to receive Gentle Monster newsletter</p>
+              </div>
+              <div class="email__wrapper3">
+                <input type="checkbox" name="" id="checkbox" />
+                <p>I agree to Term of Use and Privacy policy</p>
+              </div>
+              <div class="create-acc__buttons">
+                <button class="cancel--btn">
+                  <a href="./index.html" class="cancel__link">Cancel</a>
+                </button>
+                <button class="create--btn">Create Account</button>
               </div>
             </div>
           </div>
