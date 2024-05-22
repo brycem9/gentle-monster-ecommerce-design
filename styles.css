@@ -146,7 +146,7 @@ h1 {
 }
 
 
-.menu--open .optical2024__nav--elements {
+.menu--open .optical2024__nav--elements { 
   display: flex;
   opacity: 1;
   visibility: visible;
