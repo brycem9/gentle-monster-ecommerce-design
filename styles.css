@@ -146,6 +146,7 @@ h1 {
 }
 
 
+
 .menu--open .optical2024__nav--elements { 
   display: flex;
   opacity: 1;
@@ -261,7 +262,7 @@ h1 {
   position: absolute;
   top: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   display: none;
 }
 
@@ -363,6 +364,9 @@ padding: 2px;
 .counter__piece--plus {
 padding: 2px;
 padding-left: 8px;
+display: flex;
+align-items: center;
+margin-bottom: 2px;
 }
 
 .cart__product--img {
@@ -398,6 +402,10 @@ padding-left: 8px;
   justify-content: space-between;
   padding-top: 32px;
   border-top: gray solid 1px;
+}
+
+.stripe--wrapper {
+  width: 100%;
 }
 
 .checkout__button {
@@ -816,7 +824,7 @@ padding-left: 8px;
 .carousel-control-prev, .carousel-control-next {
   opacity: 0;
   transition: opacity 0.3s ease;
-  z-index: 40;
+  z-index: 2;
 }
 
 /* Change opacity of prev and next buttons on hover */

@@ -140,7 +140,6 @@
                 />
               </figure>
             </button>
-
             <button class="shop__button">Shop in US</button>
             <a href="./login.html"
               ><button class="shop__button">Login</button></a
@@ -153,7 +152,6 @@
                 />
               </figure>
             </button>
-            
           </div>
         </div>
       </div>
@@ -182,13 +180,14 @@
               <div class="cart__product--wrapper">
                 <h6 class="cart__product--name">
                   Academya 02
-                  <span class="cart__product--price">USD $330</span>
+                  <span class="cart__product--price">USD $<span id="product" >$330</span></span>
                 </h6>
                 <div class="cart__counter--container">
                   <div class="cart__counter">
-                    <div class="counter__piece">-</div>
-                    <div class="counter__piece--number">1</div>
-                    <div class="counter__piece--plus">+</div>
+                    <button id="minButton" class="counter__piece">-</button>
+                    <!-- <div id="countNum" class="counter__piece--number">?</div> -->
+                     <label class="counter__piece--number" id="countNum">0</label>
+                    <button id="maxButton" class="counter__piece--plus">+</button>
                   </div>
                   <span>Delete</span>
                 </div>
@@ -203,14 +202,14 @@
             </div>
             <div class="total__text">
               <h6>Subtotal</h6>
-              <h6>USD$ 330</h6>
+              <h6>USD$ <span id="subtotal">330</span> </h6>
             </div>
             <div class="total__text">
               <h6>Sales Tax</h6>
               <h6>Calculated at Checkout</h6>
             </div>
             <div class="checkout__buttons">
-              <button class="checkout__button">Checkout</button>
+              <form class="stripe--wrapper" type="submit" id="checkout-button" action="http://localhost:5501/create-checkout-session" method="POST"><button class=" checkout__button">Checkout</button></form>
               <button class="view__bag--button">View Shopping Bag</button>
             </div>
           </div>
